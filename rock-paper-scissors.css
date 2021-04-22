@@ -1,0 +1,46 @@
+body{
+    background-image:linear-gradient(to right,gray, skyblue);
+}
+.selections{
+    display: flex;
+    justify-content: center;
+}
+.selection{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 70px;
+    font-family: fantasy;
+    color: rgb(24, 13, 63);
+    margin-top: 250px;
+    margin-left: 100px;
+}
+.selection:hover{
+    transform: scale(2);
+    color: rgb(68, 41, 167);
+}
+.results{
+    font-size: 50px;
+    margin-top: 500px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.results-score{
+    margin-left: .1rem;
+    font-size: 3rem;
+    color: green;
+}
+.result-selection{
+    opacity: .3;
+}
+.result-selection.winner{
+    opacity: 1;
+    font-size: 200px;
+}
